@@ -6,7 +6,6 @@ var findFactor = function(num) {
   factors.push(i);
   var addtl = findFactor(num / i);
   if (addtl.length) {factors = factors.concat(addtl);}
-
   return factors;
 };
 
